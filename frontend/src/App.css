@@ -1,0 +1,161 @@
+/* 
+CSS Variables: 
+  --main-background-color: #31363F; 
+  --main-text-color: #EEEEEE; 
+  --main-font-family: "Arial";
+*/
+
+body {
+  margin: 0;
+  font-size: 16px;
+  background: linear-gradient(to right, #003C43, #135D66);
+}
+
+
+a {
+  text-decoration: none; 
+  color: var(--main-text-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0; 
+}
+
+input {
+  text-align: center;
+  margin: 0 4px;   
+  line-height: 20px;
+  font-size: 1rem; 
+  border-radius: 4px; 
+}
+
+input:focus {
+  border: 2px solid turquoise; 
+}
+
+.error-page {
+  height: 90vh;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.error-page h1 {
+  margin: 0;  
+}
+
+.navbar {
+  text-align: center;
+  font-style: italic;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  padding: 1rem; 
+}
+
+.navbar-title {
+  margin: 0; 
+}
+
+.board {
+  margin: auto;
+}
+
+.menu-options {
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  margin: 1rem;
+}
+
+.card {
+  width: 400px; 
+  border-radius: 12px; 
+  margin: 1rem; 
+}
+
+.card:hover {
+  transform: scale(1.1); 
+}
+
+.btn {
+  font-family: var(--main-font-family);
+  padding: 1rem 3rem; 
+  border-radius: 24px;
+  border: none; 
+}
+
+.error-btn {
+  color: var(--main-text-color); 
+  font-family: var(--main-font-family);
+  background-color: #7AB2B2; 
+  margin-top: 12px; 
+}
+
+.img-btn {
+  color: var(--main-text-color); 
+}
+
+.btn:hover, .error-btn:hover, .submit-btn:hover {
+  cursor: pointer; 
+  font-weight: bold; 
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.4); 
+}
+
+.selection-form {
+  width: 150px;  
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  gap: 4px; 
+}
+
+.form-btn {
+  width: 100%; 
+  padding: 12px; 
+  border-radius: 12px;
+  margin: 4px;
+}
+
+.scoreboard {
+  padding: 12px; 
+  display: flex;
+  justify-content: center; 
+  gap: 60px; 
+}
+
+
+.input-container {
+  width: 200px; 
+  padding: 2rem; 
+  margin: auto;
+  border-radius: 4px; 
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); 
+  display: flex; 
+  gap: 4px;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.submit-btn {
+  width: 100%;
+  margin: 10px 0; 
+  padding: 12px 24px; 
+  border-radius: 4px; 
+  background-color: #7AB2B2; 
+  color: var(--main-text-color);  
+  box-shadow: none; 
+}
+
+.found {
+  color: limegreen; 
+}
+
+.scoreboard-card:hover {
+  transform: scale(1.1); 
+}
