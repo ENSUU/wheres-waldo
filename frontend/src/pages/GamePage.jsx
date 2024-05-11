@@ -57,7 +57,7 @@ const GamePage = () => {
         // Fetch the picture and its details from REST API endpoint: http://localhost:3000/pictures/:picture_id
         const gameSetup = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/pictures/${picture_id}`); 
+                const response = await fetch(`https://wheres-waldo-backend.vercel.app/${picture_id}`); 
                 const json = await response.json(); 
                 setPicture(json.picture); 
                 const scores = getTopFiveScores(); 
