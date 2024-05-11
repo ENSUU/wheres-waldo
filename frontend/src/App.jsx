@@ -12,8 +12,8 @@ function App() {
   useEffect(() => {
     // Fetch all the pictures in the app using REST API endpoint: http://localhost:3000/pictures
     const getPictures = async () => {
-      // const response = await fetch("https://wheres-waldo-backend.vercel.app/pictures");
-      const response = await fetch("http://localhost:3000/pictures");
+      const response = await fetch("https://wheres-waldo-backend.vercel.app/pictures");
+      // const response = await fetch("http://localhost:3000/pictures");
       const json = await response.json(); 
       setPictures(json.pictures); 
     }
