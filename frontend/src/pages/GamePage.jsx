@@ -22,7 +22,7 @@ const GamePage = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault(); 
-        const response = await fetch(`https://wheres-waldo-backend.vercel.app/${picture_id}`, {
+        const response = await fetch(`https://wheres-waldo-backend.vercel.app/pictures/${picture_id}`, {
             method: "PUT", 
             headers: {
                 "Content-Type": "application/json", 
