@@ -145,7 +145,7 @@ const PictureContainer = ({ picture, headingRef, setGameStatus, setUserTime }) =
                 <div className="board" ref={imgContainerRef} onClick={userData.found.size < picture.images.length ? handleClick : null}>
                     <img 
                         style={{width: "1000px"}}
-                        src={"src/" + picture.src} 
+                        src={picture.src} 
                         alt="Crowded ship filled with random characters" 
                         ref={imgRef}
                     />
@@ -181,7 +181,7 @@ const PictureContainer = ({ picture, headingRef, setGameStatus, setUserTime }) =
                                                 className={userData.found.has(image.name) ? 'found' : ''}
                                         > 
                                             <img 
-                                                src={'src/' + `assets/${picture.name}/images/${image.name}.jpg`}
+                                                src={`/assets/${picture.name}/images/${image.name}.jpg`}
                                                 alt={`Image of ${image.name}`} 
                                                 style={{ width: "50px", height: "50px", borderRadius: "100%"  }}/>
                                             <p>{image.name}</p>
