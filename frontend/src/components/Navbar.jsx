@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className="navbar">
             <h1 className="navbar-title">
                 <Link to="/">
-                    ENSUU's Photo Tagging App (in the works tho)
+                    ENSUU's Photo Tagging App
                 </Link>
             </h1>
         </div>
